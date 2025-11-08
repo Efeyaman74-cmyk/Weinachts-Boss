@@ -1,0 +1,86 @@
+settings:
+  announce-spawns: true
+  world-lock: "Farmwelt"
+  difficulty: NORMAL
+  difficulties:
+    EASY:    { health: 0.8, damage: 0.8 }
+    NORMAL:  { health: 1.0, damage: 1.0 }
+    HARD:    { health: 1.4, damage: 1.3 }
+    INSANE:  { health: 1.8, damage: 1.6 }
+  world-lock: "Farmwelt"
+spawn-scheduler:
+  enabled: true
+  check-interval-seconds: 30
+bosses:
+  KRAMPUS:
+    display-name: "&4&lKrampus"
+    type: ZOMBIE
+    health: 400.0
+    armor: 12.0
+    damage: 12.0
+    equipment: { HAND: NETHERITE_AXE, HEAD: NETHERITE_HELMET, CHEST: NETHERITE_CHESTPLATE, LEGS: NETHERITE_LEGGINGS, FEET: NETHERITE_BOOTS }
+    drops: [ { item: CANDY_CANE_SWORD, chance: 0.15 }, { item: GINGERBREAD_SHIELD, chance: 0.25 } ]
+    arena: FARM_SPAWN
+    window: "18:00-23:00"
+    respawn-cooldown: "45m"
+    bossbar-color: RED
+  SNOW_QUEEN:
+    display-name: "&b&lSnow Queen"
+    type: STRAY
+    health: 320.0
+    armor: 8.0
+    damage: 10.0
+    equipment: { HAND: BOW, OFF_HAND: SNOWBALL, HEAD: DIAMOND_HELMET, CHEST: DIAMOND_CHESTPLATE, LEGS: DIAMOND_LEGGINGS, FEET: DIAMOND_BOOTS }
+    drops: [ { item: FROZEN_CROWN, chance: 0.12 }, { item: SNOWFLAKE_STAFF, chance: 0.20 } ]
+    arena: FARM_ICE_CAVE
+    window: "16:00-22:00"
+    respawn-cooldown: "60m"
+    bossbar-color: BLUE
+  ICE_GOLEM:
+    display-name: "&3&lEisgolem"
+    type: IRON_GOLEM
+    health: 500.0
+    armor: 18.0
+    damage: 16.0
+    equipment: { }
+    drops: [ { item: GINGERBREAD_SHIELD, chance: 0.35 } ]
+    arena: BLIZZARD_PEAK
+    window: "12:00-23:30"
+    respawn-cooldown: "45m"
+    bossbar-color: WHITE
+  FROST_WARDEN:
+    display-name: "&9&lFrost Warden"
+    type: HUSK
+    health: 360.0
+    armor: 10.0
+    damage: 14.0
+    equipment: { HAND: TRIDENT }
+    drops: [ { item: SNOWFLAKE_STAFF, chance: 0.25 }, { item: CANDY_CANE_SWORD, chance: 0.10 } ]
+    arena: FROZEN_LAKE
+    window: "18:00-23:59"
+    respawn-cooldown: "90m"
+    bossbar-color: PURPLE
+  YETI:
+    display-name: "&f&lYeti"
+    type: POLAR_BEAR
+    health: 420.0
+    armor: 6.0
+    damage: 15.0
+    equipment: { }
+    drops: [ { item: YETI_FUR_BOOTS, chance: 0.22 } ]
+    arena: BLIZZARD_PEAK
+    window: "14:00-23:00"
+    respawn-cooldown: "50m"
+    bossbar-color: PINK
+  SANTAS_SHADE:
+    display-name: "&8&lSantas Schatten"
+    type: WITHER_SKELETON
+    health: 380.0
+    armor: 10.0
+    damage: 13.0
+    equipment: { HAND: NETHERITE_SWORD }
+    drops: [ { item: SANTAS_SHADE_CAP, chance: 0.18 } ]
+    arena: GINGER_VILLAGE
+    window: "19:00-23:59"
+    respawn-cooldown: "75m"
+    bossbar-color: GREEN

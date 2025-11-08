@@ -1,0 +1,33 @@
+items:
+  CANDY_CANE_SWORD:
+    material: DIAMOND_SWORD
+    name: "&c&lCandy Cane Sword"
+    lore: ["&7Süß – aber tödlich."]
+    enchantments: { SHARPNESS: 5, LOOTING: 3 }
+    model-data: 12001
+  SNOWFLAKE_STAFF:
+    material: STICK
+    name: "&b❄ Snowflake Staff"
+    lore: ["&7Beschwört eine kleine Schneesturm-Böe."]
+    model-data: 12002
+  GINGERBREAD_SHIELD:
+    material: SHIELD
+    name: "&6Lebkuchen-Schild"
+    lore: ["&7Schmeckt besser als er blockt."]
+    model-data: 12003
+  FROZEN_CROWN:
+    material: DIAMOND_HELMET
+    name: "&bGefrorene Krone"
+    lore: ["&7Königin des Winters."]
+    enchantments: { PROTECTION: 4 }
+    model-data: 12004
+  YETI_FUR_BOOTS:
+    material: LEATHER_BOOTS
+    name: "&fYeti-Fellstiefel"
+    lore: ["&7Warm & leise."]
+    model-data: 12005
+  SANTAS_SHADE_CAP:
+    material: LEATHER_HELMET
+    name: "&cSantas Schatten-Kappe"
+    lore: ["&7So dunkel wie die Nacht vor Weihnachten."]
+    model-data: 12006

@@ -1,0 +1,13 @@
+name: WinterEventBosses
+main: com.mauli.weihnachtbosses.WinterEventBosses
+version: 1.1.0
+api-version: '1.21'
+author: MauliCraft
+commands:
+  weihnacht:
+    description: Winter Event Admin
+    usage: /weihnacht help
+    aliases: [wb, weboss]
+permissions:
+  weihnacht.admin:
+    default: op

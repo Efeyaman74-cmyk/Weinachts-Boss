@@ -1,0 +1,21 @@
+arenas:
+  FARM_SPAWN:
+    world: Farmwelt
+    spawn: { x: 0.5, y: 80.0, z: 0.5, yaw: 0.0, pitch: 0.0 }
+    radius: 30
+  FARM_ICE_CAVE:
+    world: Farmwelt
+    spawn: { x: 120.5, y: 64.0, z: -45.5, yaw: 90.0, pitch: 0.0 }
+    radius: 28
+  BLIZZARD_PEAK:
+    world: Farmwelt
+    spawn: { x: -210.0, y: 110.0, z: 75.0, yaw: 0.0, pitch: 0.0 }
+    radius: 35
+  GINGER_VILLAGE:
+    world: Farmwelt
+    spawn: { x: 300.0, y: 72.0, z: -200.0, yaw: 0.0, pitch: 0.0 }
+    radius: 32
+  FROZEN_LAKE:
+    world: Farmwelt
+    spawn: { x: -75.5, y: 63.0, z: -320.5, yaw: 0.0, pitch: 0.0 }
+    radius: 34
