@@ -1,12 +1,26 @@
-plugins { id 'java' }
+plugins {
+    id 'java'
+}
+
 group = 'com.mauli'
-version = '1.4.0'
+version = '1.5.0'
+
 repositories {
     mavenCentral()
     maven { url = 'https://repo.papermc.io/repository/maven-public/' }
 }
+
 dependencies {
-    compileOnly 'io.papermc.paper:paper-api:1.21.3-R0.1-SNAPSHOT'
+    implementation 'io.papermc.paper:paper-api:1.21.3-R0.1-SNAPSHOT'
 }
-java { toolchain { languageVersion = JavaLanguageVersion.of(17) } }
-tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8' }
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.release = 21
+    options.encoding = 'UTF-8'
+}
