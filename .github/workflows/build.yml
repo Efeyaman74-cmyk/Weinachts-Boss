@@ -1,5 +1,4 @@
 name: Build Plugin
-
 on:
   push:
     branches: [ "**" ]
@@ -10,13 +9,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Set up JDK 17
+
+      - name: Set up JDK 21
         uses: actions/setup-java@v4
         with:
-          distribution: 'temurin'
-          java-version: '17'
+          distribution: temurin
+          java-version: '21'
+
+      # Installiert eine passende Gradle-Version und führt "gradle build" aus,
+      # auch wenn KEIN gradlew im Repo liegt.
       - name: Build with Gradle
-        run: ./gradlew build --no-daemon
+        uses: gradle/gradle-build-action@v3
+        with:
+          gradle-version: 8.10.2
+          arguments: build --no-daemon
+
       - name: Upload jar
         uses: actions/upload-artifact@v4
         with:
